@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+/* Top Section */
+.top-container {
+  background-image: url(./img/bg.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+#test {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+#but {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  font-weight: normal;
+  background-color: #e2bf9c;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+}
+/* End Top Section */
+
+.header {
+  padding: 2px;
+  background: rgba(226, 191, 156, 0.65);
+  color: #f1f1f1;
+  border: 1px solid #ddd;
+  display: flex;
+  overflow-x: auto;
+}
+
+.content {
+  padding: 16px;
+}
+
+.header .category{
+  min-width: 110px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #e2bf9c;
+  margin-right: 1.5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.c {
+  margin-top: 30px;
+  margin-bottom: 26px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.t {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.e {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  /* background: #e2bf9c; */
+  background-image: url(./img/bgfooter.png);
+  background-size: cover;
+  background-position: top center;
+  border-top-style: solid;
+  border-width: 1px;
+  padding: 70px;
+  text-align: center;
+}
